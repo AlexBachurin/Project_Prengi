@@ -7,5 +7,9 @@ const slider = tns({
     autoplay: false,
     navContainer: ".solutions__slider-list",
     controlsContainer: ".solutions__slider-controls",
-    speed: 500
+    speed: 500,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    mouseDrag: true
+
   });
