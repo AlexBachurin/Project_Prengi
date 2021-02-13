@@ -1,0 +1,78 @@
+.solutions
+    min-height: 990px
+    background: url('../img/solutionsbg.jpg') center (center/cover) no-repeat
+    &__bgwrapper
+        min-height: 990px
+        +bgwrapper
+    &__bgoverlay
+        min-height: 990px
+        +bgoverlay
+    &__title
+        display: block
+        width: 620px
+        margin: 0 auto
+        padding-top: 80px
+        font-size: 30px
+        line-height: 35px
+        font-weight: 900
+        color: #ffffff
+        text-align: center
+    &__slider
+        &-wrapper
+            position: relative
+        &-item
+            width: 947px
+            height: 560px
+            img
+                display: block
+                height: auto
+                margin: 0 auto
+        &-list
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 843px
+            margin: 0 auto
+            height: 64px
+            border: 1px solid #ffffff
+            list-style-type: none
+        &-link
+            display: block
+            width: 100%
+            padding: 14px 10px 14px 10px
+            text-align: center
+            font-size: 14px
+            line-height: 25px
+            font-weight: 400
+            color: #ffffff
+            text-decoration: none
+            border-right: 1px dotted rgba(255, 255, 255, 0.4)
+            cursor: pointer
+            &:hover
+                font-weight: 700
+                color: #00c2f0
+                text-decoration: underline
+                text-underline-offset: 5px
+            &:focus
+                outline: none
+        &-controls
+
+        &-leftArrow,&-rightArrow
+            width: 18px
+            height: 59px
+            object-fit: cover
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 50px
+            outline: none
+            cursor: pointer
+        &-rightArrow
+            left: auto
+            right: 50px
+
+.tns-nav-active
+    font-weight: 700
+    color: #00c2f0
+    text-decoration: underline
+    text-underline-offset: 5px
