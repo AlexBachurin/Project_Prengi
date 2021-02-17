@@ -1,0 +1,46 @@
+.advantages
+    padding: 80px 0
+    &__title
+        max-width: 373px
+        font-size: 30px
+        line-height: 35px
+        font-weight: 900
+        color: #393939
+        text-align: center
+        margin: 0 auto
+    &__bgwrapper
+        +bgwrapper
+        min-height: 355px
+    &__bgoverlay
+        +bgoverlay
+        min-height: 355px
+        display: grid
+        place-items: center
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fit, 570px)
+        grid-template-rows: 355px
+        grid-auto-rows: 355px
+        margin-top: 44px
+    &__item
+        background: url('../img/advantages/real_time_test.jpg') center (center/cover) no-repeat
+        &:nth-child(2)
+            background: url('../img/advantages/intellect_system.jpg') center (center/cover) no-repeat
+        &:nth-child(3)
+            background: url('../img/advantages/from_any_world.jpg') center (center/cover) no-repeat
+        &:nth-child(4)
+            background: url('../img/advantages/stationary_prog.jpg') center (center/cover) no-repeat
+        &:nth-child(5)
+            background: url('../img/advantages/live_business.jpg') center (center/cover) no-repeat
+        &:nth-child(6)
+            background: url('../img/advantages/pay_later.jpg') center (center/cover) no-repeat
+        &-descr
+            background: rgba(0, 0, 0, 0.43)
+            font-size: 23px
+            line-height: 26px
+            font-weight: 400
+            color: #ffffff
+            min-height: 156px
+            width: 100%
+            text-align: center
+            padding: 40px 130px
