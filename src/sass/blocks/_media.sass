@@ -1,0 +1,107 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .slider
+        &__item
+            &-descr
+                h2
+                    font-size: 40px
+            &-outerimg
+                right: 2px
+        &__controls
+            &-arrow
+                left: -60px
+            &-right
+                left: auto
+                right: -38px
+        &__dots
+            left: 49%
+            transform: translateX(-49%)
+    .about
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 360px)
+            justify-content: center
+        &__subwrapper
+            grid-template-columns: repeat(auto-fit, 360px)
+            justify-content: center
+    .advantages
+        &__wrapper
+            justify-content: center
+    .variants
+        &__descr
+            &_left
+                max-width: 480px
+                text-align: left
+                span
+                    display: inline
+    .footer
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: space-between
+            gap: 30px
+        &__about
+            width: 263px
+        &__branch
+
+        &__company
+            width: 300px
+@media ( max-width: 991px  )
+    .container
+        max-width: 720px
+    .slider
+        &__item
+            &-innerimg
+                display: none
+            img
+                width: 100%
+                height: auto
+            &-descr
+                padding-left: 10px
+                h2
+                    max-width: 360px
+                h1
+                    max-width: 380px
+        &__dots
+            z-index: 11
+            bottom: 30px
+        &__controls
+            display: none
+    .solutions
+        min-height: 480px
+        &__bgwrapper
+            min-height: 480px
+        &__bgoverlay
+            min-height: 480px
+        &__slider
+            &-item
+                img
+                    width: 100%
+                    height: auto
+            &-controls
+                display: none
+            &-dots
+                width: 720px
+            &-list
+                width: 100%
+            &-link
+                padding: 17px 10px 17px 10px
+                &:nth-child(1)
+                    padding-top: 3px
+                    padding-bottom: 7px
+                &:nth-child(3)
+                    padding-top: 3px
+                    padding-bottom: 7px
+                   
+
+    .variants
+        &__descr
+            width: 360px
+            padding-right: 60px
+            text-align: right
+            h3
+                line-height: 35px
+            span
+                display: inline
+            &_left
+                padding-left: 60px
+                text-align: left

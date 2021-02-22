@@ -22,5 +22,6 @@ const slider = tns({
     controlsContainer: ".slider__controls",
     speed: 500,
     autoplay: true,
-    autoplayButtonOutput: false
+    autoplayButtonOutput: false,
+    // gutter: 20
   });
