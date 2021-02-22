@@ -27,6 +27,7 @@
   ],
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
+    "hover.css": "^2.3.2",
     "tiny-slider": "^2.9.3"
   }
 }

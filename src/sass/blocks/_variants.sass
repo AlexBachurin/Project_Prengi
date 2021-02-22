@@ -1,0 +1,66 @@
+.variants
+    position: relative
+    display: flex
+    &__title
+        position: absolute
+        top: 79px
+        left: 50%
+        transform: translateX(-50%)
+        max-width: 373px
+        font-size: 30px
+        line-height: 35px
+        font-weight: 900
+        color: #ffffff
+        text-align: center
+    &__sector1
+        position: relative
+        background: url('../img/variants/cloud.jpg')
+        width: 50%
+        &::after
+            +blue-square
+            right: 43px
+    &__sector2
+        position: relative
+        background: url('../img/variants/servers.jpg')
+        width: 50%
+        &::before
+            +blue-square
+            left: 43px
+    &__bgwrapper
+        background: linear-gradient(33deg, rgba(255, 113, 130, 0.4) 0%, rgba(183, 135, 157, 0.4) 39%, rgba(111, 156, 184, 0.4) 59%, rgba(46, 175, 207, 0.4) 79%, rgba(16, 184, 219, 0.4) 99%, rgba(16, 184, 219, 0.4) 100%)
+        min-height: 580px
+    &__bgoverlay
+        background: rgba(51, 51, 51, 0.6)
+        min-height: 580px
+        display: grid
+        justify-items: end
+    &__descr
+        width: 570px
+        z-index: 10
+        font-size: 18px
+        line-height: 26px
+        font-weight: 300
+        color: #ffffff
+        text-align: center
+        padding-right: 80px
+        margin-top: 270px
+        h3
+            display: block
+            margin-bottom: 20px
+            font-size: 30px
+            line-height: 22px
+            font-weight: 900
+            text-transform: uppercase
+            color: #ffffff
+            text-align: right
+        span
+            display: block
+            text-align: right
+        &_left
+            justify-self: left
+            padding-left: 80px
+            padding-right: 0
+            h3
+                text-align: left
+            span
+                text-align: left
