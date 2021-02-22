@@ -1,4 +1,6 @@
 .slider
+    &__wrapper
+        position: relative
     &__item
         position: relative
         min-height: 595px
@@ -6,14 +8,20 @@
             max-width: 530px
             padding-top: 140px
             h1
-                span
-                    font-weight: 400
+                font-weight: 300
                 font-size: 24px
                 line-height: 30px
                 font-weight: 300
                 color: #ffffff
                 margin-top: 27px
                 margin-bottom: 40px
+                span
+                    font-weight: 400
+                    font-size: 24px
+                    line-height: 30px
+                    font-weight: 300
+                    color: #ffffff
+
             h2
                 font-size: 42px
                 line-height: 48px
@@ -27,3 +35,37 @@
             position: absolute
             bottom: -3px
             right: 0
+    &__dots
+        position: absolute
+        bottom: 60px
+        left: 50%
+        transform: translateX(-50%)
+        width: 70px
+        height: 20px
+        display: flex
+        justify-content: space-between
+        &-item
+            width: 11px
+            height: 11px
+            border: 1px solid #fff
+            border-radius: 50%
+            cursor: pointer
+            outline: none
+        .tns-nav-active
+            background-color: #fff
+    &__controls
+        position: absolute
+        bottom: 60px
+        left: 50%
+        transform: translateX(-50%)
+
+        &-arrow
+            display: inline
+            position: absolute
+            left: -50px
+            top: -22px
+            outline: none
+            cursor: pointer
+        &-right
+            left: auto
+            right: -50px
