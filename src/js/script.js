@@ -25,3 +25,13 @@ const slider = tns({
     autoplayButtonOutput: false,
     // gutter: 20
   });
+
+  //menu
+
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.head__menu')
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active')
+    hamburger.classList.toggle('is-active')
+  })
