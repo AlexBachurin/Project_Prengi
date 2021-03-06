@@ -24,6 +24,7 @@
         &__subwrapper
             grid-template-columns: repeat(auto-fit, 360px)
             justify-content: center
+            row-gap: 20px
     .advantages
         &__wrapper
             justify-content: center
@@ -141,6 +142,14 @@
             display: block
             width: 100%
             height: 100%
+        &__overlay
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: #fff
+            opacity: 0.7
 
     .hamburger
         display: block
@@ -168,9 +177,26 @@
         &__bgoverlay
         &__slider
             &-dots
-                display: none
+                //display: none// 
+                width: 100%
+            &-list
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+            &-link
+                padding: 0
+                padding-bottom: 7px
+                border-right: none
+                margin-bottom: 10px
+                border-bottom: 1px dotted rgba(255,255,255,.4)
+                &:nth-child(6)
+                    margin-bottom: 0
+                    border-bottom: none
+
             &-wrapper
-                padding-top: 100px
+                padding-top: 15px
             &-item
                 height: 420px
             &-controls
@@ -178,7 +204,7 @@
             &-leftArrow,&-rightArrow
                 height: 35px
                 left: 15px
-                top: 50%
+                top: 40%
             &-rightArrow
                 left: auto
                 right: 15px
@@ -197,3 +223,56 @@
     .footer
         &__company
             width: 220px
+@media ( max-width: 575px  )
+    .container
+        width: 100%
+    .about
+        &__wrapper
+            grid-template-columns: repeat(auto-fit,320px)
+        &__subwrapper
+            grid-template-columns: repeat(auto-fit,320px)
+    .solutions
+        &__slider
+            &-controls
+                display: none
+            // &-leftArrow,&-rightArrow
+            //     top: 67%
+            //     left: 40%
+            //     transform: translate(-40%, -67%)
+            //     height: 40px
+            // &-rightArrow
+            //     left: 60%
+            &-dots
+                padding: 0 10px
+            &-item
+                height: 340px
+    .about
+        &__wrapper
+            &-item
+                padding-bottom: 0
+                &:nth-child(1)
+                    padding: 175px 60px 0px 60px
+                    
+                &:nth-child(3)
+                    padding: 161px 44px 0px 55px
+    .advantages
+        &__wrapper
+            grid-template-columns: repeat(auto-fit,320px)
+
+        &__item
+            &-descr
+                padding: 0
+                padding-top: 40px
+    .variants
+        &__descr
+            width: 100%
+    .footer
+
+        &__wrapper
+            padding-left: 20px
+            flex-direction: column
+            justify-content: center
+            align-items: space-between
+    .head
+        &__navigation
+            width: 250px
